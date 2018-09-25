@@ -8,5 +8,4 @@ for ((index = 1; index <= $x; index++))
 do  
     port=`expr 50000 + $index`
     curl "http://$etcdaddr/v2/keys/prometheus/client/$ip:$port" -XPUT
-fi 
 done 
